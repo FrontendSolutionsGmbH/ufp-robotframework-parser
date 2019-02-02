@@ -1,0 +1,202 @@
+{
+  "BUILD": {
+    "test-suite-1": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 20,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 24,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    },
+    "test-suite-2": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 15,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 14,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    },
+    "test-suite-3": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 26,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 18,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    }
+  },
+  "DEV": {
+    "test-suite-1": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 19,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 11,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    },
+    "test-suite-2": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 18,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 13,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    },
+    "test-suite-3": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 28,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 10,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    }
+  },
+  "PROD": {
+    "test-suite-1": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 18,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 20,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    },
+    "test-suite-2": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 23,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 17,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    },
+    "test-suite-3": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 15,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 22,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    }
+  },
+  "TEST": {
+    "test-suite-1": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 19,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 22,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    },
+    "test-suite-2": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 14,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 20,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    },
+    "test-suite-3": {
+      "data": [
+        {
+          "name": "Test",
+          "time": 5,
+          "failures": 3,
+          "tests": 8
+        },
+        {
+          "name": "Test",
+          "time": 31,
+          "failures": 3,
+          "tests": 8
+        }
+      ]
+    }
+  }
+}

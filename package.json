@@ -1,0 +1,33 @@
+{
+  "name": "ufp-robotframework-parser",
+  "version": "1.0.0",
+  "description": "Create overview of Robotframework test runs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "parse": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrontendSolutionsGmbH/ufp-robotframework-parser.git"
+  },
+  "keywords": [
+    "robotframework"
+  ],
+  "author": "c.Kleinhuis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrontendSolutionsGmbH/ufp-robotframework-parser/issues"
+  },
+  "homepage": "https://github.com/FrontendSolutionsGmbH/ufp-robotframework-parser#readme",
+  "dependencies": {
+    "glob": "^7.1.3",
+    "handlebars": "^4.0.12",
+    "handlebars-intl": "^1.1.2",
+    "jest": "^24.0.0",
+    "moment": "^2.24.0",
+    "rainu-env-parser": "^1.1.1",
+    "xml2json": "^0.11.2",
+    "yargs": "^12.0.5"
+  }
+}

@@ -1,0 +1,2517 @@
+<html >
+
+    <header >
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+              integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+              crossorigin="anonymous" >
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous" ></script >
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+                integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+                crossorigin="anonymous" ></script >
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+                integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+                crossorigin="anonymous" ></script >
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js" ></script >
+    </header >
+
+    <script >
+        // provide global chart namespace
+        var ufpTestReport = {
+            charts: []
+        }
+
+    </script >
+
+    <body >
+
+
+
+
+
+
+
+
+        <div class="container" >
+                <div class="row bg-primary text-light" >
+
+                    <div class="col-6" >
+                        <h1 >Stage BUILD</h1 >
+                    </div >
+                </div >
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-1 19.5s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/BUILD/test-suite-1" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-1',)
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-1', document.getElementById("myChart/BUILD/test-suite-1"))
+                            
+                                                var ctx = document.getElementById("myChart/BUILD/test-suite-1").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    18,
+                                                                    15,
+                                                                    19,
+                                                                    14,
+                                                                    16,
+                                                                    13,
+                                                                    24,
+                                                                    24,
+                                                                    22,
+                                                                    30,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/BUILD/test-suite-1-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-1',)
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-1', document.getElementById("myChart/BUILD/test-suite-1-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/BUILD/test-suite-1-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-2 17.7s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/BUILD/test-suite-2" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-2',)
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-2', document.getElementById("myChart/BUILD/test-suite-2"))
+                            
+                                                var ctx = document.getElementById("myChart/BUILD/test-suite-2").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    24,
+                                                                    16,
+                                                                    11,
+                                                                    17,
+                                                                    15,
+                                                                    22,
+                                                                    13,
+                                                                    19,
+                                                                    25,
+                                                                    15,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/BUILD/test-suite-2-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-2',)
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-2', document.getElementById("myChart/BUILD/test-suite-2-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/BUILD/test-suite-2-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-3 16.6s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/BUILD/test-suite-3" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-3',)
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-3', document.getElementById("myChart/BUILD/test-suite-3"))
+                            
+                                                var ctx = document.getElementById("myChart/BUILD/test-suite-3").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    13,
+                                                                    14,
+                                                                    24,
+                                                                    19,
+                                                                    13,
+                                                                    20,
+                                                                    23,
+                                                                    18,
+                                                                    8,
+                                                                    14,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/BUILD/test-suite-3-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-3',)
+                                                console.log('Rendering Chart myChart/BUILD/test-suite-3', document.getElementById("myChart/BUILD/test-suite-3-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/BUILD/test-suite-3-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+
+                <div class="row bg-primary text-light" >
+
+                    <div class="col-6" >
+                        <h1 >Stage DEV</h1 >
+                    </div >
+                </div >
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-1 40.08s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/DEV/test-suite-1" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/DEV/test-suite-1',)
+                                                console.log('Rendering Chart myChart/DEV/test-suite-1', document.getElementById("myChart/DEV/test-suite-1"))
+                            
+                                                var ctx = document.getElementById("myChart/DEV/test-suite-1").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '32 minutes ago',
+                                                                '32 minutes ago',
+                                                                '33 minutes ago',
+                                                                '33 minutes ago',
+                                                                '34 minutes ago',
+                                                                '35 minutes ago',
+                                                                '35 minutes ago',
+                                                                '36 minutes ago',
+                                                                '37 minutes ago',
+                                                                '37 minutes ago',
+                                                                '38 minutes ago',
+                                                                '38 minutes ago',
+                                                                '39 minutes ago',
+                                                                '40 minutes ago',
+                                                                '41 minutes ago',
+                                                                '41 minutes ago',
+                                                                '42 minutes ago',
+                                                                '43 minutes ago',
+                                                                '44 minutes ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    42,
+                                                                    18,
+                                                                    39,
+                                                                    53,
+                                                                    18,
+                                                                    48,
+                                                                    38,
+                                                                    45,
+                                                                    43,
+                                                                    25,
+                                                                    39,
+                                                                    40,
+                                                                    43,
+                                                                    42,
+                                                                    41,
+                                                                    39,
+                                                                    56,
+                                                                    49,
+                                                                    53,
+                                                                    46,
+                                                                    52,
+                                                                    26,
+                                                                    41,
+                                                                    37,
+                                                                    29,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/DEV/test-suite-1-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/DEV/test-suite-1',)
+                                                console.log('Rendering Chart myChart/DEV/test-suite-1', document.getElementById("myChart/DEV/test-suite-1-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/DEV/test-suite-1-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '32 minutes ago',
+                                                                '32 minutes ago',
+                                                                '33 minutes ago',
+                                                                '33 minutes ago',
+                                                                '34 minutes ago',
+                                                                '35 minutes ago',
+                                                                '35 minutes ago',
+                                                                '36 minutes ago',
+                                                                '37 minutes ago',
+                                                                '37 minutes ago',
+                                                                '38 minutes ago',
+                                                                '38 minutes ago',
+                                                                '39 minutes ago',
+                                                                '40 minutes ago',
+                                                                '41 minutes ago',
+                                                                '41 minutes ago',
+                                                                '42 minutes ago',
+                                                                '43 minutes ago',
+                                                                '44 minutes ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                                                                '1 hour ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    4,
+                                                                    3,
+                                                                    5,
+                                                                    9,
+                                                                    5,
+                                                                    2,
+                                                                    5,
+                                                                    4,
+                                                                    5,
+                                                                    5,
+                                                                    5,
+                                                                    4,
+                                                                    7,
+                                                                    1,
+                                                                    5,
+                                                                    4,
+                                                                    4,
+                                                                    5,
+                                                                    6,
+                                                                    6,
+                                                                    2,
+                                                                    9,
+                                                                    5,
+                                                                    6,
+                                                                    4,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    13- 4,
+                                                                    13- 3,
+                                                                    13- 5,
+                                                                    13- 9,
+                                                                    13- 5,
+                                                                    13- 2,
+                                                                    13- 5,
+                                                                    13- 4,
+                                                                    13- 5,
+                                                                    13- 5,
+                                                                    13- 5,
+                                                                    13- 4,
+                                                                    13- 7,
+                                                                    13- 1,
+                                                                    13- 5,
+                                                                    13- 4,
+                                                                    13- 4,
+                                                                    13- 5,
+                                                                    13- 6,
+                                                                    13- 6,
+                                                                    13- 2,
+                                                                    13- 9,
+                                                                    13- 5,
+                                                                    13- 6,
+                                                                    13- 4,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-2 41.88s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/DEV/test-suite-2" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/DEV/test-suite-2',)
+                                                console.log('Rendering Chart myChart/DEV/test-suite-2', document.getElementById("myChart/DEV/test-suite-2"))
+                            
+                                                var ctx = document.getElementById("myChart/DEV/test-suite-2").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '14 minutes ago',
+                                                                '15 minutes ago',
+                                                                '15 minutes ago',
+                                                                '16 minutes ago',
+                                                                '17 minutes ago',
+                                                                '17 minutes ago',
+                                                                '18 minutes ago',
+                                                                '19 minutes ago',
+                                                                '19 minutes ago',
+                                                                '20 minutes ago',
+                                                                '21 minutes ago',
+                                                                '22 minutes ago',
+                                                                '22 minutes ago',
+                                                                '23 minutes ago',
+                                                                '24 minutes ago',
+                                                                '24 minutes ago',
+                                                                '25 minutes ago',
+                                                                '26 minutes ago',
+                                                                '26 minutes ago',
+                                                                '27 minutes ago',
+                                                                '28 minutes ago',
+                                                                '28 minutes ago',
+                                                                '29 minutes ago',
+                                                                '30 minutes ago',
+                                                                '31 minutes ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    44,
+                                                                    41,
+                                                                    37,
+                                                                    51,
+                                                                    29,
+                                                                    30,
+                                                                    40,
+                                                                    45,
+                                                                    49,
+                                                                    38,
+                                                                    49,
+                                                                    46,
+                                                                    35,
+                                                                    42,
+                                                                    43,
+                                                                    42,
+                                                                    35,
+                                                                    50,
+                                                                    32,
+                                                                    40,
+                                                                    45,
+                                                                    38,
+                                                                    48,
+                                                                    48,
+                                                                    50,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/DEV/test-suite-2-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/DEV/test-suite-2',)
+                                                console.log('Rendering Chart myChart/DEV/test-suite-2', document.getElementById("myChart/DEV/test-suite-2-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/DEV/test-suite-2-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '14 minutes ago',
+                                                                '15 minutes ago',
+                                                                '15 minutes ago',
+                                                                '16 minutes ago',
+                                                                '17 minutes ago',
+                                                                '17 minutes ago',
+                                                                '18 minutes ago',
+                                                                '19 minutes ago',
+                                                                '19 minutes ago',
+                                                                '20 minutes ago',
+                                                                '21 minutes ago',
+                                                                '22 minutes ago',
+                                                                '22 minutes ago',
+                                                                '23 minutes ago',
+                                                                '24 minutes ago',
+                                                                '24 minutes ago',
+                                                                '25 minutes ago',
+                                                                '26 minutes ago',
+                                                                '26 minutes ago',
+                                                                '27 minutes ago',
+                                                                '28 minutes ago',
+                                                                '28 minutes ago',
+                                                                '29 minutes ago',
+                                                                '30 minutes ago',
+                                                                '31 minutes ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    4,
+                                                                    7,
+                                                                    4,
+                                                                    2,
+                                                                    5,
+                                                                    5,
+                                                                    5,
+                                                                    4,
+                                                                    7,
+                                                                    6,
+                                                                    7,
+                                                                    2,
+                                                                    6,
+                                                                    6,
+                                                                    7,
+                                                                    5,
+                                                                    3,
+                                                                    2,
+                                                                    4,
+                                                                    3,
+                                                                    4,
+                                                                    5,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    13- 4,
+                                                                    13- 7,
+                                                                    13- 4,
+                                                                    13- 2,
+                                                                    13- 5,
+                                                                    13- 5,
+                                                                    13- 5,
+                                                                    13- 4,
+                                                                    13- 7,
+                                                                    13- 6,
+                                                                    13- 7,
+                                                                    13- 2,
+                                                                    13- 6,
+                                                                    13- 6,
+                                                                    13- 7,
+                                                                    13- 5,
+                                                                    13- 3,
+                                                                    13- 2,
+                                                                    13- 4,
+                                                                    13- 3,
+                                                                    13- 4,
+                                                                    13- 5,
+                                                                    13- 3,
+                                                                    13- 3,
+                                                                    13- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-3 40.947s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/DEV/test-suite-3" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/DEV/test-suite-3',)
+                                                console.log('Rendering Chart myChart/DEV/test-suite-3', document.getElementById("myChart/DEV/test-suite-3"))
+                            
+                                                var ctx = document.getElementById("myChart/DEV/test-suite-3").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '42 seconds ago',
+                                                                '1 minute ago',
+                                                                '2 minutes ago',
+                                                                '2 minutes ago',
+                                                                '3 minutes ago',
+                                                                '4 minutes ago',
+                                                                '5 minutes ago',
+                                                                '6 minutes ago',
+                                                                '7 minutes ago',
+                                                                '7 minutes ago',
+                                                                '8 minutes ago',
+                                                                '9 minutes ago',
+                                                                '10 minutes ago',
+                                                                '10 minutes ago',
+                                                                '11 minutes ago',
+                                                                '12 minutes ago',
+                                                                '12 minutes ago',
+                                                                '13 minutes ago',
+                                                                '13 minutes ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    33,
+                                                                    34,
+                                                                    44,
+                                                                    24,
+                                                                    45,
+                                                                    58,
+                                                                    55,
+                                                                    51,
+                                                                    37,
+                                                                    47,
+                                                                    38,
+                                                                    51,
+                                                                    43,
+                                                                    43,
+                                                                    49,
+                                                                    30,
+                                                                    34,
+                                                                    31,
+                                                                    31,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/DEV/test-suite-3-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/DEV/test-suite-3',)
+                                                console.log('Rendering Chart myChart/DEV/test-suite-3', document.getElementById("myChart/DEV/test-suite-3-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/DEV/test-suite-3-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '42 seconds ago',
+                                                                '1 minute ago',
+                                                                '2 minutes ago',
+                                                                '2 minutes ago',
+                                                                '3 minutes ago',
+                                                                '4 minutes ago',
+                                                                '5 minutes ago',
+                                                                '6 minutes ago',
+                                                                '7 minutes ago',
+                                                                '7 minutes ago',
+                                                                '8 minutes ago',
+                                                                '9 minutes ago',
+                                                                '10 minutes ago',
+                                                                '10 minutes ago',
+                                                                '11 minutes ago',
+                                                                '12 minutes ago',
+                                                                '12 minutes ago',
+                                                                '13 minutes ago',
+                                                                '13 minutes ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    6,
+                                                                    4,
+                                                                    6,
+                                                                    5,
+                                                                    6,
+                                                                    6,
+                                                                    5,
+                                                                    5,
+                                                                    5,
+                                                                    4,
+                                                                    5,
+                                                                    6,
+                                                                    4,
+                                                                    5,
+                                                                    1,
+                                                                    4,
+                                                                    3,
+                                                                    5,
+                                                                    5,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    13- 6,
+                                                                    13- 4,
+                                                                    13- 6,
+                                                                    13- 5,
+                                                                    13- 6,
+                                                                    13- 6,
+                                                                    13- 5,
+                                                                    13- 5,
+                                                                    13- 5,
+                                                                    13- 4,
+                                                                    13- 5,
+                                                                    13- 6,
+                                                                    13- 4,
+                                                                    13- 5,
+                                                                    13- 1,
+                                                                    13- 4,
+                                                                    13- 3,
+                                                                    13- 5,
+                                                                    13- 5,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+
+                <div class="row bg-primary text-light" >
+
+                    <div class="col-6" >
+                        <h1 >Stage PROD</h1 >
+                    </div >
+                </div >
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-1 18.6s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/PROD/test-suite-1" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/PROD/test-suite-1',)
+                                                console.log('Rendering Chart myChart/PROD/test-suite-1', document.getElementById("myChart/PROD/test-suite-1"))
+                            
+                                                var ctx = document.getElementById("myChart/PROD/test-suite-1").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    21,
+                                                                    13,
+                                                                    24,
+                                                                    16,
+                                                                    22,
+                                                                    15,
+                                                                    16,
+                                                                    9,
+                                                                    29,
+                                                                    21,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/PROD/test-suite-1-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/PROD/test-suite-1',)
+                                                console.log('Rendering Chart myChart/PROD/test-suite-1', document.getElementById("myChart/PROD/test-suite-1-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/PROD/test-suite-1-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-2 15.7s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/PROD/test-suite-2" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/PROD/test-suite-2',)
+                                                console.log('Rendering Chart myChart/PROD/test-suite-2', document.getElementById("myChart/PROD/test-suite-2"))
+                            
+                                                var ctx = document.getElementById("myChart/PROD/test-suite-2").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    12,
+                                                                    15,
+                                                                    19,
+                                                                    11,
+                                                                    14,
+                                                                    21,
+                                                                    12,
+                                                                    14,
+                                                                    25,
+                                                                    14,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/PROD/test-suite-2-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/PROD/test-suite-2',)
+                                                console.log('Rendering Chart myChart/PROD/test-suite-2', document.getElementById("myChart/PROD/test-suite-2-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/PROD/test-suite-2-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-3 19.3s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/PROD/test-suite-3" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/PROD/test-suite-3',)
+                                                console.log('Rendering Chart myChart/PROD/test-suite-3', document.getElementById("myChart/PROD/test-suite-3"))
+                            
+                                                var ctx = document.getElementById("myChart/PROD/test-suite-3").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    18,
+                                                                    14,
+                                                                    19,
+                                                                    29,
+                                                                    10,
+                                                                    11,
+                                                                    20,
+                                                                    24,
+                                                                    24,
+                                                                    24,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/PROD/test-suite-3-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/PROD/test-suite-3',)
+                                                console.log('Rendering Chart myChart/PROD/test-suite-3', document.getElementById("myChart/PROD/test-suite-3-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/PROD/test-suite-3-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+
+                <div class="row bg-primary text-light" >
+
+                    <div class="col-6" >
+                        <h1 >Stage TEST</h1 >
+                    </div >
+                </div >
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-1 18.8s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/TEST/test-suite-1" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/TEST/test-suite-1',)
+                                                console.log('Rendering Chart myChart/TEST/test-suite-1', document.getElementById("myChart/TEST/test-suite-1"))
+                            
+                                                var ctx = document.getElementById("myChart/TEST/test-suite-1").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    24,
+                                                                    20,
+                                                                    18,
+                                                                    12,
+                                                                    15,
+                                                                    12,
+                                                                    18,
+                                                                    27,
+                                                                    16,
+                                                                    26,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/TEST/test-suite-1-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/TEST/test-suite-1',)
+                                                console.log('Rendering Chart myChart/TEST/test-suite-1', document.getElementById("myChart/TEST/test-suite-1-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/TEST/test-suite-1-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-2 16s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/TEST/test-suite-2" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/TEST/test-suite-2',)
+                                                console.log('Rendering Chart myChart/TEST/test-suite-2', document.getElementById("myChart/TEST/test-suite-2"))
+                            
+                                                var ctx = document.getElementById("myChart/TEST/test-suite-2").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    12,
+                                                                    21,
+                                                                    11,
+                                                                    13,
+                                                                    17,
+                                                                    18,
+                                                                    11,
+                                                                    15,
+                                                                    23,
+                                                                    19,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/TEST/test-suite-2-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/TEST/test-suite-2',)
+                                                console.log('Rendering Chart myChart/TEST/test-suite-2', document.getElementById("myChart/TEST/test-suite-2-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/TEST/test-suite-2-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+                    <div class="row bg-info text-light" >
+                        <div class="col-12" >
+                            <h2 >Test test-suite-3 20.3s Average Duration (in seconds)</h2 >
+
+
+                        </div >
+                    </div >
+                <div >
+                    <div class="row" >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative; " >
+                                            <canvas id="myChart/TEST/test-suite-3" ></canvas >
+                            
+                                            <script >
+                                                console.log('Rendering Chart myChart/TEST/test-suite-3',)
+                                                console.log('Rendering Chart myChart/TEST/test-suite-3', document.getElementById("myChart/TEST/test-suite-3"))
+                            
+                                                var ctx = document.getElementById("myChart/TEST/test-suite-3").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                                                    responsive: true,
+                                                    data: {
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#007bff',
+                                                            label: 'Duration (seconds)',
+                                                            data: [
+                                                                    19,
+                                                                    26,
+                                                                    15,
+                                                                    20,
+                                                                    27,
+                                                                    15,
+                                                                    19,
+                                                                    26,
+                                                                    19,
+                                                                    17,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                                        </div >
+                            
+                            
+
+                        </div >
+                        <div class="col-6" >
+
+                            
+                                        <div class="chart-container"
+                                             style="position: relative;  " >
+                                            <canvas id="myChart/TEST/test-suite-3-successfail" ></canvas >
+                                            <script >
+                                                console.log('Rendering Chart myChart/TEST/test-suite-3',)
+                                                console.log('Rendering Chart myChart/TEST/test-suite-3', document.getElementById("myChart/TEST/test-suite-3-successfail"))
+                            
+                                                var ctx = document.getElementById("myChart/TEST/test-suite-3-successfail").getContext('2d');
+                                                ufpTestReport.charts.push(new Chart(ctx, {
+                                                    type: 'bar',
+                            
+                                                    data: {
+                            
+                                                        labels: [
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                                                                '19 hours ago',
+                            
+                            
+                            
+                            
+                                                        ],
+                                                        datasets: [{
+                                                            backgroundColor: '#dc3545',
+                                                            label: 'Failed Tests ',
+                                                            data: [
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                                    3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }, {
+                                                            backgroundColor: '#28a745',
+                                                            label: 'Successful Tests  ',
+                                                            data: [
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                                    8- 3,
+                                                            ],
+                            
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        responsive: true,
+                                                        maintainAspectRatio: false,
+                                                        scales: {
+                                                            yAxes: [{
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }],
+                                                            xAxes: [{
+                                                                display: false,
+                                                                stacked: true,
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                }));
+                            
+                            
+                                            </script >
+                            
+                            
+                                        </div >
+                            
+
+                        </div >
+                    </div >
+
+
+
+
+
+
+        </div >
+    </body >
+</html >
